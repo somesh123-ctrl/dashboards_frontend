@@ -1,4 +1,3 @@
-// pages/index.js or pages/index.tsx
 "use client"
 import React, { useEffect } from 'react';
 
