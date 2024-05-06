@@ -1,4 +1,4 @@
-// pages/index.tsx
+
 import React from 'react';
 import Slideshow from './Slideshow';
 
