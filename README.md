@@ -17,29 +17,29 @@ Logout: Users can log out of their accounts, terminating their current session.
 Email Notifications: User will get otp on their email and also receive mail for
 new login.
 ### Dashboard
-Active Sessions: Administrators can view active user sessions, including details
+#Active Sessions: Administrators can view active user sessions, including details
 such as email, device type, and login time. They can also sign out users from
 individual sessions.
-User Activity: Administrators can track user login and logout activities,
+#User Activity: Administrators can track user login and logout activities,
 providing insights into user interactions and session durations.
 ### Navigation
-Navbar: A navigation bar provides easy access to different sections of the
+#Navbar: A navigation bar provides easy access to different sections of the
 application, including the homepage, login, registration, active sessions, and
 user activity.
 ## Project Structure
 The Dashboard Project follows a modular structure, with separate components
 for authentication, dashboard functionalities, navigation, and API calls. Key
 components include:
-AuthContext: Manages user authentication state and provides context for
+#AuthContext: Manages user authentication state and provides context for
 login, logout, and session management.
-Login: Handles user login, including sending OTP (one-time password) for twofactor authentication.
-Register: Manages user registration, allowing new users to create accounts
+#Login: Handles user login, including sending OTP (one-time password) for twofactor authentication.
+#Register: Manages user registration, allowing new users to create accounts
 securely.
-Dashboard: Displays active user sessions and provides options to sign out users
+#Dashboard: Displays active user sessions and provides options to sign out users
 from individual sessions.
-Sessions: Displays user login and logout activities, providing insights into user
+#Sessions: Displays user login and logout activities, providing insights into user
 interactions and session durations.
-Navbar: Provides navigation links for easy access to different sections of the
+#Navbar: Provides navigation links for easy access to different sections of the
 application.
 ## Getting Started
 To run the Dashboard Project locally, follow these steps:
