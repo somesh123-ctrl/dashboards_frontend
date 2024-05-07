@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+# Dashboard Project Documentation
+## Overview
+The Dashboard Project is a web application designed to provide real-time
+insights into user login and logout activities. It offers administrators a
+comprehensive view of user interactions and facilitates effective management
+of user sessions. Built with a technology stack comprising Next.js, Node.js,
+TypeScript, Express, and MongoDB, the Dashboard Project ensures high
+performance, scalability, and a seamless user experience.
+## Features
+### Authentication
+Login: Users can securely log in to their accounts using their email address and
+password. Upon successful login, users receive an authentication token.
+Registration: New users can create an account by providing their email address
+and password. Upon successful registration, users are redirected to the login
+page.
+Logout: Users can log out of their accounts, terminating their current session.
+Email Notifications: User will get otp on their email and also receive mail for
+new login.
+### Dashboard
+Active Sessions: Administrators can view active user sessions, including details
+such as email, device type, and login time. They can also sign out users from
+individual sessions.
+User Activity: Administrators can track user login and logout activities,
+providing insights into user interactions and session durations.
+### Navigation
+Navbar: A navigation bar provides easy access to different sections of the
+application, including the homepage, login, registration, active sessions, and
+user activity.
+## Project Structure
+The Dashboard Project follows a modular structure, with separate components
+for authentication, dashboard functionalities, navigation, and API calls. Key
+components include:
+AuthContext: Manages user authentication state and provides context for
+login, logout, and session management.
+Login: Handles user login, including sending OTP (one-time password) for twofactor authentication.
+Register: Manages user registration, allowing new users to create accounts
+securely.
+Dashboard: Displays active user sessions and provides options to sign out users
+from individual sessions.
+Sessions: Displays user login and logout activities, providing insights into user
+interactions and session durations.
+Navbar: Provides navigation links for easy access to different sections of the
+application.
 ## Getting Started
+To run the Dashboard Project locally, follow these steps:
+1. Clone the project repository from GitHub.
+2. Install dependencies using npm or yarn.
+3. Set up environment variables, including MongoDB connection details and
+API endpoints.
+4. Run the development server using the appropriate command (`npm run dev`
+or `yarn dev`).
+5. Access the application in your web browser using the provided localhost
+URL.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
